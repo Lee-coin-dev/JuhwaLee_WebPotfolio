@@ -140,9 +140,10 @@ img { max-width: 100%; display: block; }
 
 /* ---------- ABOUT ---------- */
 .about__grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 28px; margin-bottom: 56px;
+  display: grid; gap: 28px; margin-bottom: 28px;
 }
+.about__grid--top { grid-template-columns: 1fr 2fr; }
+.about__grid--bottom { grid-template-columns: 1fr 1fr; margin-bottom: 0; }
 .about__col {
   background: var(--card); border: 1px solid var(--line); border-radius: 14px;
   padding: 34px 30px; box-shadow: var(--shadow);
@@ -165,19 +166,14 @@ img { max-width: 100%; display: block; }
 .edu__degree { margin-top: 12px; font-weight: 600; color: var(--ink); }
 .edu__meta { margin-top: 6px; font-size: 0.86rem; color: var(--slate); }
 
-/* Experience two-column rows */
-.exp { border-top: 1px solid var(--line); padding-top: 40px; }
-.exp__title { font-family: var(--serif); font-size: 1.3rem; margin-bottom: 22px; color: var(--ink); }
-.exp__list { list-style: none; }
-.exp__row {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: baseline;
-  padding: 22px 0; border-bottom: 1px solid var(--line);
-  transition: padding-left 0.3s var(--ease);
-}
-.exp__row:hover { padding-left: 10px; }
-.exp__role { font-size: 1.18rem; font-weight: 700; color: var(--ink); display: flex; flex-direction: column; }
-.exp__role small, .exp__org small { font-size: 0.8rem; font-weight: 500; color: var(--slate); margin-top: 4px; letter-spacing: 0; }
-.exp__org { font-size: 1.02rem; color: var(--ink-soft); font-weight: 600; display: flex; flex-direction: column; }
+/* Experience card */
+.exp__list { list-style: none; display: flex; flex-direction: column; gap: 22px; }
+.exp__item { padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.exp__item:last-child { padding-bottom: 0; border-bottom: none; }
+.exp__role { font-size: 1.12rem; font-weight: 700; color: var(--ink); display: flex; flex-direction: column; }
+.exp__role small { font-size: 0.8rem; font-weight: 500; color: var(--slate); margin-top: 4px; letter-spacing: 0; }
+.exp__org { margin-top: 8px; font-size: 0.98rem; color: var(--ink-soft); font-weight: 600; }
+.exp__meta { margin-top: 4px; font-size: 0.84rem; color: var(--slate); }
 
 /* ---------- KEYWORDS ---------- */
 .kw__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
@@ -355,7 +351,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 980px) {
   .hero__grid { grid-template-columns: 1fr; text-align: left; gap: 40px; }
   .hero__portrait-frame { max-width: 300px; }
-  .about__grid { grid-template-columns: 1fr; }
+  .about__grid--top, .about__grid--bottom { grid-template-columns: 1fr; }
   .kw__grid { grid-template-columns: 1fr; }
   .whw { grid-template-columns: 1fr; }
   .deliver, .deliver--reverse { grid-template-columns: 1fr; }
@@ -375,7 +371,6 @@ img { max-width: 100%; display: block; }
   .nav__menu { gap: 16px; }
   .nav__link { font-size: 0.78rem; }
   .nav__brand span { display: none; }
-  .exp__row { grid-template-columns: 1fr; gap: 6px; }
   .deliver__media, .deliver__media--grid { grid-template-columns: 1fr 1fr; }
   .container { padding: 0 20px; }
   .footer__quote { white-space: normal; }
@@ -411,7 +406,7 @@ img { max-width: 100%; display: block; }
   .section, .deliver, .whw, .kw__grid, .branch, .feedback,
   .about__grid, .flow, .kisa { break-inside: avoid; page-break-inside: avoid; }
   .section__head, .kw__card, .whw__card, .branch__leaf,
-  .deliver, .feedback__card, .exp__row { break-inside: avoid; page-break-inside: avoid; }
+  .deliver, .feedback__card, .exp__item { break-inside: avoid; page-break-inside: avoid; }
   .kisa__logo { position: static; }
   .shot:hover img { transform: none; }
 

@@ -65,7 +65,7 @@
         <h2 class="section__title">About Me</h2>
       </div>
 
-      <div class="about__grid">
+      <div class="about__grid about__grid--top">
         <article class="about__col reveal">
           <h3 class="about__col-title">소개</h3>
           <p class="about__lead">
@@ -82,14 +82,27 @@
         <article class="about__col reveal">
           <h3 class="about__col-title">Skills &amp; Languages</h3>
           <ul class="skill-list">
-            <li><span class="skill-list__k">Languages</span><span class="skill-list__v">English (Native-level)</span></li>
-            <li><span class="skill-list__k">Strategy</span><span class="skill-list__v">전략 기획 · 문제 정의 · 데이터 기반 성과 지표화(Excel)</span></li>
-            <li><span class="skill-list__k">Design</span><span class="skill-list__v">Adobe Photoshop · Illustrator</span></li>
-            <li><span class="skill-list__k">Office</span><span class="skill-list__v">MS Word · Excel · PowerPoint</span></li>
-            <li><span class="skill-list__k">AI · Dev</span><span class="skill-list__v">Cursor · GPT · Claude Code 기반 프로토타이핑 (Front-end · Full-stack · AI Chatbot)</span></li>
+            <li>
+              <span class="skill-list__k">Languages</span>
+              <span class="skill-list__v">English — <strong>Native-level</strong>. 학술·실무 환경에서 영어로 소통·문서 작성·협업이 가능합니다.</span>
+            </li>
+            <li>
+              <span class="skill-list__k">Office · Data</span>
+              <span class="skill-list__v">MS Word · Excel · PowerPoint 세 가지 모두 실무에서 다년간 다뤄 왔습니다. 특히 <strong>Excel 함수와 테이블을 활용해 학생들의 성적 데이터를 취합·지표화</strong>하는 등, 정량 데이터를 분석하고 지표로 가공하는 작업에 능숙합니다.</span>
+            </li>
+            <li>
+              <span class="skill-list__k">Design</span>
+              <span class="skill-list__v">Adobe Photoshop · Illustrator — 간단한 홍보물과 그래픽 자료를 직접 제작할 수 있는 수준입니다.</span>
+            </li>
+            <li>
+              <span class="skill-list__k">AI · Dev</span>
+              <span class="skill-list__v">Cursor · GPT · Claude Code 기반 프로토타이핑(Front-end · Full-stack · AI Chatbot). <strong>이 웹 포트폴리오 또한 직접 프로토타이핑 기술로 제작</strong>했으며, 현재 Python · C 등 개발 언어도 꾸준히 학습하고 있습니다.</span>
+            </li>
           </ul>
         </article>
+      </div>
 
+      <div class="about__grid about__grid--bottom">
         <article class="about__col reveal">
           <h3 class="about__col-title">Education</h3>
           <div class="edu">
@@ -98,20 +111,22 @@
             <p class="edu__meta">2020.08 – 2025.08 · New York, USA</p>
           </div>
         </article>
-      </div>
 
-      <div class="exp reveal">
-        <h3 class="exp__title">Experience</h3>
-        <ul class="exp__list">
-          <li class="exp__row">
-            <span class="exp__role">교무행정부장<small>Head of Faculty &amp; Administration Director</small></span>
-            <span class="exp__org">Caelumprep Education Institute<small>2022.06 – 현재</small></span>
-          </li>
-          <li class="exp__row">
-            <span class="exp__role">설립 회장<small>Founding President</small></span>
-            <span class="exp__org">KISA (Korean International Students Association)<small>2022.01 – 2023.01</small></span>
-          </li>
-        </ul>
+        <article class="about__col reveal">
+          <h3 class="about__col-title">Experience</h3>
+          <ul class="exp__list">
+            <li class="exp__item">
+              <p class="exp__role">교무행정부장 <small>Head of Faculty &amp; Administration Director</small></p>
+              <p class="exp__org">Caelumprep Education Institute</p>
+              <p class="exp__meta">2022.06 – 현재</p>
+            </li>
+            <li class="exp__item">
+              <p class="exp__role">설립 회장 <small>Founding President</small></p>
+              <p class="exp__org">KISA (Korean International Students Association)</p>
+              <p class="exp__meta">2022.01 – 2023.01</p>
+            </li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
@@ -138,7 +153,7 @@
         </article>
         <article class="kw__card reveal">
           <span class="kw__num">03</span>
-          <h3 class="kw__title">설계<small>Thinker</small></h3>
+          <h3 class="kw__title">설계<small>Architect</small></h3>
           <p>추상적이고 모호한 생각을 언어와 구조로 구현·설계합니다. 형이상학적 개념을 텍스트와 전략으로 풀어내는 것이 저의 가장 큰 강점입니다.</p>
         </article>
       </div>
@@ -201,7 +216,7 @@
         </article>
         <article class="whw__card whw__card--what reveal">
           <span class="whw__label">WHAT · 결과</span>
-          <p>두 학생 모두 목표 대학에 합격하며 전략의 유효성을 증명했습니다.</p>
+          <p>목표를 향해 끝까지 파고든 <strong>집념</strong>으로, 두 학생 모두 목표 대학에 합격하며 전략의 유효성을 증명했습니다.</p>
           <ul class="result-list">
             <li><strong>University of Chicago</strong> 합격</li>
             <li><strong>Rhode Island School of Design (RISD)</strong> 합격</li>
@@ -302,9 +317,8 @@
             </ul>
           </div>
           <div class="feedback__card feedback__card--minus">
-            <span class="feedback__tag">아쉬웠던 점 → 인사이트</span>
-            <p>목표 관객 30명 중 약 20명 모집에 그쳐 <strong>목표 성과 미달</strong>. 막연한 SNS 홍보가 아니라, 명확한 Target Audience(난민 이슈에 관심 있는 10~30대, 유학생 학부모 커뮤니티)를 정의하고 그에 맞는 채널·웹사이트 기반 프로모션을 적극 실행했어야 한다고 회고합니다.</p>
-            <p class="whw__accent">→ <strong>데이터 기반 타겟팅</strong>의 중요성을 체득했습니다.</p>
+            <span class="feedback__tag">배운 점</span>
+            <p>서비스 전략을 수립하는데에 있어 뚜렷한 목표를 설정하는 것과 그 목표를 달성하기 위해 필요한 개인 및 팀원들의 역량을 파악하는 <strong>메타인지</strong>가 얼마나 중요한지 깨달았습니다. 또한 해당 프로젝트를 통해 팀원들의 아이디어를 규합해서 텍스트로써 구체화하고, 이를 실행하는 것까지의 <strong>설계</strong>역량을 더 키웠다고 생각합니다.</p>
           </div>
         </div>
       </div>
@@ -344,7 +358,7 @@
             </article>
             <article class="whw__card whw__card--what reveal">
               <span class="whw__label">WHAT</span>
-              <p>정식 학생회로 <strong>Chartering 성공</strong>(현재까지 운영 중). Instagram 프로모션 체계 확립, <strong>U-way 스폰서십 계약</strong>으로 안정적 자금조달과 한국문화 확산에 기여.</p>
+              <p>개척자 없는 환경을 <strong>집념</strong>으로 돌파해 정식 학생회로 <strong>Chartering 성공</strong>(현재까지 운영 중). Instagram 프로모션 체계 확립, <strong>U-way 스폰서십 계약</strong>으로 안정적 자금조달과 한국문화 확산에 기여.</p>
             </article>
           </div>
 
@@ -356,12 +370,12 @@
                 <ul class="dot-list">
                   <li>Founding President로서 Zero-to-Ten을 완수하며 리더십 강화</li>
                   <li>영어 기반으로 타 기관과 협력 체계를 구축하는 역량 확보</li>
-                  <li>ROI 기댓값을 설정하고 지속가능한 수익모델을 설계해 기획자 역량 강화</li>
+                  <li>ROI 기댓값을 설정하고 지속가능한 수익모델을 <strong>설계</strong>해 기획자 역량 강화</li>
                 </ul>
               </div>
               <div class="feedback__card feedback__card--minus">
                 <span class="feedback__tag">배운 점</span>
-                <p>의사결정에 있어 <strong>확고한 소통체계</strong>의 중요성을 체감했습니다. 지속가능한 수익모델을 만들며 다양한 분야의 사례를 참조했고, <strong>정량·정성 데이터의 수집과 분석</strong>에 대한 학습이 필요함을 깨달았습니다.</p>
+                <p>의사결정에 있어 <strong>확고한 소통체계</strong>의 중요성을 체감했습니다. 또한 무엇이 부족한지 스스로 파악하는 <strong>메타인지</strong>를 통해, 정량·정성 데이터의 수집과 분석 역량을 더 키워야 함을 깨달았습니다.</p>
               </div>
             </div>
           </div>
