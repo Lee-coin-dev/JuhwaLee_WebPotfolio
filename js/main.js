@@ -64,9 +64,10 @@
   const lightboxImg = document.getElementById("lightboxImg");
   const lightboxClose = document.getElementById("lightboxClose");
 
-  function openLightbox(src, alt) {
+  function openLightbox(src, alt, whiteBg) {
     lightboxImg.src = src;
     lightboxImg.alt = alt || "확대 이미지";
+    lightboxImg.classList.toggle("is-white", !!whiteBg);
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
@@ -81,7 +82,7 @@
   document.querySelectorAll("[data-lightbox]").forEach(function (el) {
     el.addEventListener("click", function () {
       const img = el.querySelector("img");
-      if (img) openLightbox(img.currentSrc || img.src, img.alt);
+      if (img) openLightbox(img.currentSrc || img.src, img.alt, el.dataset.lightboxBg === "white");
     });
   });
   lightboxClose.addEventListener("click", closeLightbox);
